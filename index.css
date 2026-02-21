@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-50: #f0f4ff;
+  --color-brand-100: #d9e2ff;
+  --color-brand-200: #bbcbff;
+  --color-brand-300: #8da6ff;
+  --color-brand-400: #5876ff;
+  --color-brand-500: #2c42ff;
+  --color-brand-600: #1a22ff;
+  --color-brand-700: #1417ff;
+  --color-brand-800: #1114d1;
+  --color-brand-900: #1619a3;
+  --color-brand-950: #0a0a23;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

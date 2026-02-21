@@ -1,0 +1,8 @@
+{
+  "name": "Promptiva AI",
+  "description": "Next-gen prompt engineering laboratory for 2026. Synthesize hyper-realistic art, logos, and architectural concepts with advanced AI vision analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
